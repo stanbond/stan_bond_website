@@ -44,7 +44,7 @@ if($_POST)
 	$send_mail = mail($to_email, $subject, $message_body, $headers);
 	
 	// if(!$send_mail)
-	if (!isset($POST['submit']))
+	if (!isset($ POST['submit']))
 	{
 		//If mail couldn't be sent output error. Check your PHP email configuration (if it ever happens)
 		$output = json_encode(array('type'=>'error', 'text' => 'Could not send mail! Please check your PHP mail configuration.'));
