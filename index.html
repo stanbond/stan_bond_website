@@ -684,7 +684,7 @@
               </ul>
 
             </div><!-- /.col-md-3 -->
-
+            <!-- <?php require_once 'assets/php/mailer.php' ?> -->
             <div class="col-md-8 col-md-offset-1">
 
               <div
@@ -726,7 +726,8 @@
                     </div> -->
                     <div class="col-md-6 text-md-right">
 <!--                       <input type="submit" value="SEND MESSAGE" class="font-size-14 ltr-sp-2"> -->
-			    <button type="submit" class="font-size-14 ltr-sp-2">SEND MESSAGE</button>
+                            <!-- onclick="JSalert()" -->
+			    <button type="submit" name="submit"  class="font-size-14 ltr-sp-2">SEND MESSAGE</button>
                     </div><!-- /.col-md-6 -->
                   </div><!-- /.row -->
                   <div class="contact-form-result hidden"></div>
@@ -740,6 +741,9 @@
         </div><!-- /.container -->
 
       </section>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script src="alert/dist/sweetalert-dev.js"></script>
+      <link rel="stylesheet" href="alert/dist/sweetalert.css">
 
       <section class="pt-35 pb-35" style="background-color: #060742;">
         <div class="container">
@@ -786,6 +790,11 @@
   <script src="./assets/js/theme-vendors.js"></script>
   <script src="./assets/js/theme.min.js"></script>
   <script src="./assets/js/liquidAjaxContactForm.min.js"></script>
+  <!-- <script type="text/javascript">
+    function JSalert() {
+      swal("Thanks!", ", Your email was sent!", "success");
+    }
+  </script> -->
 
 
   <script>
